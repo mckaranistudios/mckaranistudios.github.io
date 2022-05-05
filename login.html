@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>McKarani Studios - Whatever It Takes!</title>
+    <title>McKarani Studios Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <meta name="Keywords" content="Music producer, Music Production, Music composition, Beginner music production, Produce music, Music production tips, Music software, DAW , Digital Audio Workstation, Audio recording, Audio software, Audio restoration, Audio editing, Podcasts, Films, Film Scoring, Compressor, Equalizer , Reverb , Delay, Mixing , Mastering, FL Studio, Audio Plugins, Spectrasonics , Omnisphere , Keyscape , Kontakt , Studio Drummer, Damage 2, Neo-Soul Keys, Session Strings Pro 2, Kontakt Factory Library, Nord Stage 2, Evolution modern Nylon, Evolution Strawberry, Lessons, Strummed Acoustic 2, Scarbee Funk Guitarist, Alicia Keys, Sessions Horns Pro, Chris Hein - Solo Violin, Ample Sound, xlnaudio, Addictive Drums, Addictive Keys, IK Multimedia, MODO DRUM, MODO BASS, Sample Tank 4, Philharmonik 2, BFD3, Superior Drummer 3, EZ Bass, EZ Drummer 2, Nexus, Pianoteq, Spire, Serum, Acon, Antares, Izotope, Fabfilter, Youlean, Voxengo, Reviews, Tutorials, Training, Learning, Quiz, Courses, Lessons, Examples, Demos, Tips">
     <meta name="Description" content="Comprehensive and yet easy to understand informational materials and tutorials, including an ocean of examples of how to navigate music production, use DAWs, audio plugins, studio microphones, midi keyboards and so much more.">
+    <meta name="author" content="MARK KARANI NJATHA">
 
     <link rel="icon" type="image/png" href="images/logo-favicon.png">
-    <link rel="stylesheet" href="styles/style.css">
-
-
+    <link rel="stylesheet" href="styles/login.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-212315309-1"></script>
@@ -25,31 +25,43 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo"><a href="http://mckaranistudios.com"><img src = "images/logo.svg" alt="McKarani Studios Logo"></a></div>
-        <img src="/images/menu.png" alt="Menu Button" class = "menu-btn">
-        <ul class="nav-links">
-            <li class="active"><a href=""></a>Home</li>
-            <li><a href=""></a>Services</li>
-            <li><a href=""></a>Blog</li>
-            <li><a href=""></a>About</li>
-            <li class=button href=""></a>Contact</li>
-        </ul>
-    </nav>
-    
-    <header>
-        <div class="header-content">
-            <h1><span class="gray1">Welcome to</span><span class="gray2"> McKarani Studios</span></h1> 
-            <h2>Whatever it takes!</h2>
-            <div class="line"></div>
-            <a href="#" class="ctn">Let's get started...</a>
-        </div>
-    </header>
-    
-<!-- Main js (main.js) - Index Javascript -->
-<script type="text/javascript" src="scripts/main.js"></script>
+    <img class="wave" src="images/login/Wave.svg">
+    <div class="container">
+        <div class="img">
+            <img src="images/login/authentication.svg">
+            </div>
+            <div class="login-content">
+                <form action="index.html">
+                <img src="images/login/Logo.svg">
+                <h2 class="title">Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
 
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+
+                <a href="#">Password reset?</a>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <!-- Login js (login.js) - Login Javascript -->
+<script type="text/javascript" src="scripts/login.js"></script>
 
 </body>
 </html>

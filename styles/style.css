@@ -1,0 +1,153 @@
+/* Google Fonts */
+@import url('http://fonts.googleapis.com/css?family=san-serif');
+
+/*==== Global ==== */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    font-size: 18px;
+}
+.active{
+    color:#056B5F;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px;
+    color: #ffffff;
+    background:#FFAB16;
+}
+.logo{
+    width: 8%;
+    height: 8%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4%;
+    margin-top: 5px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.button{
+    padding: 8px 15px;
+    background: #5a706e;
+    border-radius: 30px;
+    color:#ffffff;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: #111027;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom:150px;
+    color: #ffffff;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 10vmin;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing:2px;
+}
+.line{
+    width: 50vmin;
+    height: 4px;
+    background: #FFAB16;
+    margin: 1px auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 120px;
+    display: flex;
+}
+.header-content h2{
+    font-size: 7vmin;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #056B5F;
+    border-radius: 30px;
+    color:#ffffff;
+}
+.gray1{
+    color:#ffffff
+}
+.gray2{
+    color:#FFAB16
+}
+.menu-btn{
+    position:absolute;
+    top: 50px;
+    right:30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+
+/*responsiveness on mobile devices*/
+@media only screen and (max-width:428px) {
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        width: 12%;
+        height: 12%;
+        justify-content: space-between;
+        padding-left: 4%;
+        margin-top: 5px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: right;
+        text-align:right;
+        background: #FFAB16;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .menu-btn{
+        top: 10px;
+        right:30px;
+        width: 25px;
+        height: 25px;
+    }
+    .nav-links li{
+        margin: 30px;
+    }
+
+
+
+
+    }
+
