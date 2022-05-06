@@ -1,0 +1,42 @@
+/* Google Fonts */
+@import url('http://fonts.googleapis.com/css?family=san-serif');
+
+
+
+body, html {
+    height: 100%;
+    background:#111027;
+    color:#fff;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.return-home{
+    display: flex;
+    justify-content:right;
+    margin: 20px 20px 0px 0px;
+    color:#fff;
+}
+
+.display-middle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+
+
+.center-bottom{
+    position:absolute;
+    left:50%;bottom:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%)
+}
+
+.padding-large{
+    padding:12px 24px!important
+}

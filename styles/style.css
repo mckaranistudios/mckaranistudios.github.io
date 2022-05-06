@@ -9,20 +9,28 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
+    color:#fff;
+        font-size: 14px;
+
 }
 ul{
     list-style: none;
-    font-size: 18px;
 }
 .active{
     color:#056B5F;
-    font-weight: bold;
+    font-weight: semi-bold;
+}
+
+body{
+  background: #111027;
+  padding: 0px;
 }
 
 /* Navbar */
-.navbar{
+.navigation-bar{
     position: absolute;
     top: 0;
     display:flex;
@@ -33,8 +41,8 @@ ul{
     background:#FFAB16;
 }
 .logo{
-    width: 8%;
-    height: 8%;
+    width: 6%;
+    height: 6%;
     justify-content: space-between;
     align-items: center;
     padding-left: 4%;
@@ -47,9 +55,9 @@ ul{
 .nav-links li{
     margin: 0 30px;
 }
-.button{
-    padding: 8px 15px;
-    background: #5a706e;
+.contact-button{
+    padding: 4px 8px;
+    background: #056B5F;
     border-radius: 30px;
     color:#ffffff;
 }
@@ -57,24 +65,26 @@ header {
     width: 100vw;
     height: 100vh;
     background: #111027;
-    background-position: bottom;
-    background-size: cover;
     display: flex;
-    align-items: flex-end;
+    align-items:center;
     justify-content: center;
 }
 .header-content{
-    margin-bottom:150px;
     color: #ffffff;
     text-align: center;
 }
 .header-content h1{
     font-size: 10vmin;
     margin-top: 50px;
-    margin-bottom: 50px;
-    letter-spacing:2px;
+    margin-bottom: 0px;
+    letter-spacing:1px;
 }
-.line{
+
+.header-content h2{
+    font-size: 7vmin;
+}
+
+.line-header{
     width: 50vmin;
     height: 4px;
     background: #FFAB16;
@@ -84,19 +94,17 @@ header {
     margin-bottom: 120px;
     display: flex;
 }
-.header-content h2{
-    font-size: 7vmin;
-}
+
 .ctn{
-    padding: 8px 15px;
+    padding: 8px 15px 8px 15px;
     background: #056B5F;
-    border-radius: 30px;
+    border-radius: 25px;
     color:#ffffff;
+    border: 5px #056B5F;
+    font-size: 3.5vmin
 }
-.gray1{
-    color:#ffffff
-}
-.gray2{
+
+.color-change{
     color:#FFAB16
 }
 .menu-btn{
@@ -106,14 +114,171 @@ header {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    visibility:hidden;
 }
+
+
+
+
+/* 
+---------------------------------------------
+Footer Start
+--------------------------------------------- 
+*/
+
+footer {
+  margin: auto;
+  width:100%;
+  bottom: 0;
+  background: linear-gradient(to right, #1f3b33 , #056B5F, #1f3b33 );
+  padding: 0px;
+}
+
+.mailingList-section{
+  margin-top:0;
+}
+
+.formSub{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 10px 50px 10px;
+
+}
+
+.mailSub{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  margin: 25px 10px 0px 10px;
+}
+
+.subEmail-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.emailFieldset-div{
+  margin: 0px 10px 0px 0px;
+  border: none;
+
+}
+
+.email-footer{
+  height: 46px;
+  border: 1px solid #fff;
+  border-radius:20px;
+  width: 250px;
+}
+
+.subFieldset-div{
+  margin: 0px 10px 0px 0px;
+  border: none;
+
+}
+
+.sub-footer{
+  background:#E4001B;
+  height: 46px;
+  border: 1px solid #fff;
+  border-radius: 23px;
+  color: #fff;
+  width: 100px;
+  transition: all .5s;
+}
+
+.line-footer{
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #056B5F,#1f3b33 , #1f3b33,#056B5F );
+    margin:auto;
+    border-radius: 5px;
+    display: flex;
+}
+
+.footer-row{
+  color: #ffffff;
+  width: 100%;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #FFAB16;
+  background: linear-gradient(to right, #1f3b33 , #056B5F, #1f3b33 );
+
+}
+
+.footer-column1{
+  margin-top: 5px;
+  flex-basis: 25%;
+  padding: 0px 10px 10px 10px;
+}
+
+.footer-column2{
+  margin-top: 5px;
+  flex-basis: 25%;
+  padding: 0px 10px 10px 10px;
+
+}
+
+.footer-column3{
+  margin-top: 5px;
+  flex-basis: 25%;
+  padding: 0px 10px 10px 10px;
+}
+
+.footer-column4{
+  margin-top: 5px;
+  flex-basis: 25%;
+  padding: 0px 10px 10px 10px;
+
+}
+
+.footer-widget{
+  color:white;
+  font-size: 14px;
+
+}
+
+.footer-h3{
+  margin-bottom: 10px;
+}
+
+.footer-li{
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-logo{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-copyright{
+  margin:auto;
+  padding-top: 10px;
+}
+/* 
+---------------------------------------------
+Footer End
+--------------------------------------------- 
+*/
+
+
 
 
 
 
 /*responsiveness on mobile devices*/
 @media only screen and (max-width:428px) {
-    .navbar{
+    .navigation-bar{
         padding: 0;
     }
     .logo{
@@ -137,17 +302,16 @@ header {
         margin-top: 0px;
     }
     .menu-btn{
+        position:absolute;
         top: 10px;
         right:30px;
         width: 25px;
         height: 25px;
+        cursor: pointer;
     }
     .nav-links li{
         margin: 30px;
     }
-
-
-
 
     }
 
