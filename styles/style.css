@@ -126,6 +126,11 @@ Footer Start
 --------------------------------------------- 
 */
 
+#footer-id{
+  margin:auto !important;
+  width: 100%;
+
+}
 footer {
   margin: auto;
   width:100%;
@@ -302,12 +307,7 @@ Footer End
 @media (max-width: 992px) {
 
 }
-
-@media (max-width: 767px) {
-
-}
-
-@media only screen and (max-width:360px) {
+@media only screen and (max-width: 767px){
     .navigation-bar{
         padding: 0;
     }
@@ -342,6 +342,11 @@ Footer End
     .nav-links li{
         margin: 30px;
     }
+
+    #footer-id{
+      margin:auto !important;
+      width: 100%;
+        }
 
     .mailSub{
       display: flex;
@@ -378,11 +383,8 @@ Footer End
 
     .footer-row{
       color: #ffffff;
-      width: 100%;
-      margin:auto;
       display: inline;
       align-items: flex-start;
-      background: #FFAB16;
       background: linear-gradient(to right, #1f3b33 , #056B5F, #1f3b33 );
     
     }
@@ -412,31 +414,40 @@ Footer End
       color:white;
       font-size: 14px;
       padding-bottom:30px ;
+      
 
     }
 
     .footer-column4 .footer-h3{
-      margin: auto;
-      width: 100%;
       color:rgb(180, 180, 180);
-      text-align: center;
+
+
     }
     .footer-column4 {
+      text-align: center;
       margin: auto;
       width: 100%;
       color:white;
       font-size: 14px;
-      text-align: center;
     }
 
     .footer-logo{
-      visibility:hidden;
+      padding-left: 100px;
+      visibility: hidden;
     
     }
     
     .footer-h3{
-      margin-bottom: 0px;
       color:rgb(180, 180, 180);
+    }
+
+
+    .p-footer{
+      padding:0px;
+      text-align: center;
+      margin:auto;
+      width: 500px;
+
     }
 
 
